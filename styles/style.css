@@ -49,13 +49,12 @@ ol {
 
 .result__video-container {
   width: 711px;
-  min-height: 386px;
+  height: 386px;
   margin-bottom: 15px;
   position: relative;
 }
 
 .result__video {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -89,6 +88,8 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .content__video-card-thumbnail {
@@ -127,11 +128,6 @@ ol {
   text-decoration: none;
   color: #fff;
   display: block;
-}
-
-.content__video-card {
-  margin-left: 2px;
-  margin-right: 2px;
 }
 
 .content__video-card:hover {
@@ -231,7 +227,7 @@ ol {
   padding: 1px;
 }
 
-input[type="checkbox"]:checked + span {
+.search-form__checkbox[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   background-clip: content-box;
   background-color: #fff;
 }
